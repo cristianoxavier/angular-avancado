@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<table class="table table-hover">
+<table class="table table-houver">
   <thead>
     <tr class="bg-primary text-light">
       <th>Categoria</th>
@@ -26,9 +26,9 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor='let category of categories'>
+    <tr *ngFor="let category of categories">
       <td>
-        <strong>{{ category.name }}</strong><br>
+        <strong>{{category.name}}</strong><br>
         <small>{{category.description}}</small>
       </td>
       <td>
@@ -36,6 +36,5 @@
         <button (click)="deleteCategory(category)" class="btn btn-outline-danger btn-sm">Excluir</button>
       </td>
     </tr>
-    
   </tbody>
 </table>
